@@ -1,0 +1,90 @@
+{
+  "name": "plan-b-construction-website",
+  "version": "1.0.0",
+  "description": "Professional construction services website with 24/7 emergency response. Features admin dashboard, quote system, and service management.",
+  "main": "main.html",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "build": "echo 'Static site - no build required'",
+    "dev": "npx serve . -l 3000 --cors",
+    "test": "echo 'No tests specified'",
+    "deploy": "echo 'Ready for deployment'",
+    "serve": "npx serve . -l 3000 --single",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "construction",
+    "emergency-services",
+    "fire-damage",
+    "water-damage",
+    "roofing",
+    "restoration",
+    "contractor",
+    "georgia",
+    "atlanta",
+    "pwa",
+    "responsive",
+    "admin-dashboard"
+  ],
+  "author": {
+    "name": "Plan B Construction",
+    "email": "office@planbconstructioninc.com",
+    "url": "https://planbconstructioninc.com"
+  },
+  "license": "MIT",
+  "homepage": "https://planbconstructioninc.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planbconstruction/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planbconstruction/website/issues",
+    "email": "office@planbconstructioninc.com"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "files": [
+    "main.html",
+    "quote.html",
+    "index.html",
+    "manifest.json",
+    "sw.js",
+    "robots.txt",
+    "sitemap.xml",
+    "src/**/*",
+    ".htaccess",
+    "_redirects"
+  ],
+  "directories": {
+    "lib": "src"
+  },
+  "config": {
+    "port": 3000,
+    "host": "localhost"
+  },
+  "deployment": {
+    "platforms": [
+      "netlify",
+      "vercel",
+      "apache",
+      "nginx",
+      "github-pages"
+    ],
+    "requirements": [
+      "Static file hosting",
+      "HTTPS support",
+      "Custom domain support",
+      "Service Worker support"
+    ]
+  }
+} 

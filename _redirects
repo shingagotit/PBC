@@ -1,0 +1,34 @@
+# Plan B Construction - Netlify Redirects
+
+# Redirect root to main.html
+/    /main.html    200
+
+# Handle SPA routing
+/*    /main.html    200
+
+# Force HTTPS
+http://planbconstructioninc.com/*    https://planbconstructioninc.com/:splat    301!
+
+# Remove www
+https://www.planbconstructioninc.com/*    https://planbconstructioninc.com/:splat    301!
+
+# API endpoints (for future use)
+/api/*    /.netlify/functions/:splat    200
+
+# Admin routes (protected)
+/admin/*    /main.html    200
+
+# Emergency contact redirect
+/emergency    tel:4043747675    302
+
+# Quote form redirect
+/quote    /quote.html    200
+
+# Legacy redirects
+/home    /main.html    301
+/services    /main.html#services    301
+/gallery    /main.html#gallery    301
+/contact    /main.html#contact    301
+
+# Handle 404s
+/404    /main.html    200 
